@@ -48,8 +48,7 @@ urlpatterns = [
     path('item-list-create/<int:pk>', ItemListCreateAPIView.as_view(), name='item-list-create'),
     path('item-retrieve-update/<int:pk>', ItemRetrieveUpdateAPIView.as_view(), name='item-retrieve-update'),
     path('item-retrieve-destroy/<int:pk>', ItemRetrieveDestroyAPIView.as_view(), name='item-retrieve-destroy'), 
-    path('item-list/<int:pk>', ItemRetrieveUpdateDestroyAPIView.as_view(), name='item-retrieve-update-destroy'),
-    path('item-list/<int:pk>', ItemListAPIView.as_view(), name='item-list')
+    path('item-retrieve-update-destroy/<int:pk>', ItemRetrieveUpdateDestroyAPIView.as_view(), name='item-retrieve-update-destroy'),
 
 ]
 
