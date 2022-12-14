@@ -41,7 +41,16 @@ INSTALLED_APPS = [
     'api',
     'rest_framework',
     'rest_framework_swagger',
+    'drf_yasg',
 ]
+SWAGGER_SETTINGS = {
+    'LOGIN_URL': 'rest_framework:login',
+    'LOGOUT_URL': 'rest_framework:logout',
+    'USE_SESSION_AUTH': True,
+    'DOC_EXPANSION': 'list',
+    'APIS_SORTER': 'alpha',
+    'SHOW_REQUEST_HEADERS': True
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -124,7 +133,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 # Path where media is stored
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
