@@ -11,14 +11,17 @@ from django_countries.fields import CountryField
 CATEGORY_CHOICES = (
     ('S', 'Shirt'),
     ('SW', 'Sport wear'),
-    ('OW', 'Outwear')
+    ('OW', 'Outwear'),
+    ('PL', 'Programming Language'),
 )
 
 LABEL_CHOICES = (
-    ('P', 'primary'),
-    ('S', 'secondary'),
-    ('D', 'danger')
+    ('P', 'Primary'),
+    ('S', 'Secondary'),
+    ('D', 'Danger')
 )
+
+ 
 
 ADDRESS_CHOICES = (
     ('B', 'Billing'),
